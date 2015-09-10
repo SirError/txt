@@ -1,16 +1,38 @@
-Meu primeiro arquivo
+git init  <-- Inicializa o repositório
+(Existe um diretório oculto chamado .git responsável em guardar as informações do git. Não mexem.)
+git status <-- Mostra o status do repositório, quando houver arquivo não comitado, mostra "Untracked files..."
+git add nomeDoArquivo  <-- A apartir desse momento o git está rastreando o arquivo, porém o mesmo ainda não está no repositório.
+git commit -m "Mensagem" <-- Efetua o commit no repositório.
 
-Nossa segunda linha =')
+É possível adicionar vários arquivos de uma vez
+git add --all
+git add "*.txt"
 
-Saca só esse hotfix que hot :v
+git log <-- Mostrará o histórico de commits no repositório.
 
-Mais um commit aqui...
+git remote add origin https://github.com/nome-usuario/nome-repositorio.git  <--Adiciona um repositório remoto (gitHub, bitbucket e etc).
 
-olha que legal
+git push -u origin master <-- Envia os códigos pro diretório remoto (origin) que estão no local (master). O -u faz com que o git memorize a 
+ação, assim na próxima vez, bastaria fazer git push
 
+git pull origin master <-- Baixa os código commitados no github
 
-vamos guerriar
+git diff HEAD <-- Mostrará as alterações que ocorreram
 
-vamos conflitar
+git reset nomeArquivo <-- tira do da area de stage, porém não exclui.
 
-chega de guerras, vamos viver felizes \o/
+git checkout -- nome_arquivo <-- Volta pro estado q os arquivos estavam até aquele commit.
+
+git branch nome <-- Cria um branch novo, como se fosse uma cópia do seu projeto, assim as mudanças que fizer aqui, não afetará o tronco 
+principal, e ainda permitirá que vc junte os projetos mais tarde; 
+
+git branch <-- mostrará os branches disponíveis. É possível ainda fazer git checkout -b new_branch
+
+git rm nomeDoArquivo <-- remove os arquivos e já deixa preparado no stage, porém se commit.
+
+pra juntar tudo, volte na principal.
+
+git merge nomeDaBranch
+
+git branch -d clean_up <-- pra apagar o branch q não for usar mais
+
