@@ -1,3 +1,9 @@
+Testando commit da minha branch
+
+
+
+
+
 git init  <-- Inicializa o repositório
 (Existe um diretório oculto chamado .git responsável em guardar as informações do git. Não mexem.)
 git status <-- Mostra o status do repositório, quando houver arquivo não comitado, mostra "Untracked files..."
